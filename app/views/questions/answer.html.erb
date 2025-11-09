@@ -1,0 +1,30 @@
+<div class="container">
+
+    <div class="mt-3">
+        <h1>Stupid Coaching</h1>
+        
+        <div class="col-md-7 my-3 border-start border-5 p-3" id="question">
+            <figure>
+                <blockquote class="blockquote">
+                    <p><%= @question %></p>
+                </blockquote>
+                <figcaption class="blockquote-footer fst-italic">
+                    You
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="col-md-7 my-3 border-start border-5 bg-warning p-3" style="--bs-bg-opacity: .2;" id="answer">
+            <figure>
+                <blockquote class="blockquote fw-semibold">
+                    <p><%= @answer %></p>
+                </blockquote>
+                <figcaption class="blockquote-footer fst-italic">
+                    Your coach
+                </figcaption>
+            </figure>
+        </div>        
+    </div>
+
+    <p><%= link_to "Ask another question", ask_path, class: "mt-3 link-underline-light" %></p>
+</div>
